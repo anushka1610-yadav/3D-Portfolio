@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a
             href="/"
-            className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
+            className="text-neutral-400 font-bold text-xl hover:text-white transition-colors px-8"
           >
             Anushka
           </a>
