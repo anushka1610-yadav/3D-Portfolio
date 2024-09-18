@@ -5,7 +5,7 @@ import CanvasLoader from "../Components/CanvasLoader";
 import { Suspense } from "react";
 import { PerspectiveCamera } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
-import { calculateSizes } from "../Components/index.js";
+import { calculateSizes } from "../constants/index";
 
 const Hero = () => {
   //   const controls = useControls("HackerRoom", {
