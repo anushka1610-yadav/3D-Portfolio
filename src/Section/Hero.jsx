@@ -6,6 +6,10 @@ import { Suspense } from "react";
 import { PerspectiveCamera } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants/index";
+import Target from "../Components/Target";
+import ReactLogo from "../Components/ReactLogo";
+import Cube from "../Components/Cube";
+import Ring from "../Components/Ring";
 
 const Hero = () => {
   //   const controls = useControls("HackerRoom", {
@@ -53,6 +57,13 @@ const Hero = () => {
               position={sizes.deskPosition}
               rotation={[0, -Math.PI, 0]}
             />
+
+            <group>
+              <Target position={sizes.targetPosition} />
+              <ReactLogo position={sizes.reactLogoPosition} />
+              <Cube position={sizes.cubePosition} />
+              <Ring position={sizes.ringPosition} />
+            </group>
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
