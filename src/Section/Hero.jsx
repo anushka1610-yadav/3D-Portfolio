@@ -43,7 +43,7 @@ const Hero = () => {
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
           Hi, I am Anushka <span className="waving-hand">👋</span>
         </p>
-        <p class="hero_tag text-gray_gradient text-5xl text-white text-center">
+        <p className="hero_tag text-gray_gradient text-5xl text-white text-center">
           Building Products & Brands
         </p>
       </div>
@@ -53,15 +53,14 @@ const Hero = () => {
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-            
-            <HeroCamera isMobile={isMobile}>
-            <HackerRoom
-              scale={sizes.deskScale}
-              position={sizes.deskPosition}
-              rotation={[0, -Math.PI, 0]}
-            />
-            </HeroCamera>
 
+            <HeroCamera isMobile={isMobile}>
+              <HackerRoom
+                scale={sizes.deskScale}
+                position={sizes.deskPosition}
+                rotation={[0, -Math.PI, 0]}
+              />
+            </HeroCamera>
 
             <group>
               <Target position={sizes.targetPosition} />
@@ -76,7 +75,11 @@ const Hero = () => {
       </div>
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
         <a href="#contact" className="w-fit">
-          <Button name="Lets work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96"/>
+          <Button
+            name="Lets work together"
+            isBeam
+            containerClass="sm:w-fit w-full sm:min-w-96"
+          />
         </a>
       </div>
     </section>
