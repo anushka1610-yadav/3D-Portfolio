@@ -45,12 +45,21 @@ const Contact = () => {
 
   return (
     <section className="c-space my-20">
-      <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img
+      <div
+        className="relative min-h-screen flex items-center justify-center flex-col"
+        style={{
+          border: "1px solid #757575",
+          paddingBottom: "3rem",
+          borderRadius: "1rem",
+          boxShadow: "12px 12px 18px #232323c2",
+          background: "#101010",
+        }}
+      >
+        {/* <img
           src="/assets/terminal.png"
           alt="terminal-background"
           className="absolute inset-0 min-h-screen"
-        />
+        /> */}
         <div className="contact-container">
           <h3 className="head-text">Let's talk</h3>
           <p className="text-lg text-white-600 mt-3">
